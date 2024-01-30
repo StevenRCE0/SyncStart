@@ -11,6 +11,12 @@
 		B08EBF4B2B6914E000B38447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF4A2B6914E000B38447 /* ContentView.swift */; };
 		B08EBF4D2B6914E200B38447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08EBF4C2B6914E200B38447 /* Assets.xcassets */; };
 		B08EBF502B6914E200B38447 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08EBF4F2B6914E200B38447 /* Preview Assets.xcassets */; };
+		B08EBF582B69150200B38447 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF572B69150200B38447 /* Constants.swift */; };
+		B08EBF5A2B6915A100B38447 /* GlobalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF592B6915A100B38447 /* GlobalConfiguration.swift */; };
+		B08EBF5C2B69183400B38447 /* Execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF5B2B69183400B38447 /* Execute.swift */; };
+		B08EBF5F2B6919D600B38447 /* SwiftExec in Frameworks */ = {isa = PBXBuildFile; productRef = B08EBF5E2B6919D600B38447 /* SwiftExec */; };
+		B08EBF612B691D3200B38447 /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF602B691D3200B38447 /* PreferenceView.swift */; };
+		B08EBF632B69629F00B38447 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EBF622B69629F00B38447 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		B08EBF4C2B6914E200B38447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B08EBF4F2B6914E200B38447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B08EBF512B6914E200B38447 /* SyncStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SyncStart.entitlements; sourceTree = "<group>"; };
+		B08EBF572B69150200B38447 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B08EBF592B6915A100B38447 /* GlobalConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConfiguration.swift; sourceTree = "<group>"; };
+		B08EBF5B2B69183400B38447 /* Execute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Execute.swift; sourceTree = "<group>"; };
+		B08EBF602B691D3200B38447 /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		B08EBF622B69629F00B38447 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B08EBF5F2B6919D600B38447 /* SwiftExec in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,11 @@
 				B08EBF4C2B6914E200B38447 /* Assets.xcassets */,
 				B08EBF512B6914E200B38447 /* SyncStart.entitlements */,
 				B08EBF4E2B6914E200B38447 /* Preview Content */,
+				B08EBF572B69150200B38447 /* Constants.swift */,
+				B08EBF592B6915A100B38447 /* GlobalConfiguration.swift */,
+				B08EBF5B2B69183400B38447 /* Execute.swift */,
+				B08EBF602B691D3200B38447 /* PreferenceView.swift */,
+				B08EBF622B69629F00B38447 /* Errors.swift */,
 			);
 			path = SyncStart;
 			sourceTree = "<group>";
@@ -85,6 +102,9 @@
 			dependencies = (
 			);
 			name = SyncStart;
+			packageProductDependencies = (
+				B08EBF5E2B6919D600B38447 /* SwiftExec */,
+			);
 			productName = SyncStart;
 			productReference = B08EBF452B6914E000B38447 /* SyncStart.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +133,9 @@
 				Base,
 			);
 			mainGroup = B08EBF3C2B6914E000B38447;
+			packageReferences = (
+				B08EBF5D2B6919D600B38447 /* XCRemoteSwiftPackageReference "swift-exec" */,
+			);
 			productRefGroup = B08EBF462B6914E000B38447 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +163,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B08EBF4B2B6914E000B38447 /* ContentView.swift in Sources */,
+				B08EBF5A2B6915A100B38447 /* GlobalConfiguration.swift in Sources */,
 				B08EBF492B6914E000B38447 /* SyncStartApp.swift in Sources */,
+				B08EBF5C2B69183400B38447 /* Execute.swift in Sources */,
+				B08EBF582B69150200B38447 /* Constants.swift in Sources */,
+				B08EBF612B691D3200B38447 /* PreferenceView.swift in Sources */,
+				B08EBF632B69629F00B38447 /* Errors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B08EBF5D2B6919D600B38447 /* XCRemoteSwiftPackageReference "swift-exec" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/samuelmeuli/swift-exec.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B08EBF5E2B6919D600B38447 /* SwiftExec */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B08EBF5D2B6919D600B38447 /* XCRemoteSwiftPackageReference "swift-exec" */;
+			productName = SwiftExec;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B08EBF3D2B6914E000B38447 /* Project object */;
 }
